@@ -12,9 +12,10 @@ CREATE TABLE WeightClass (
     Name VARCHAR2(255) PRIMARY KEY,
     NonTitleLimit NUMBER,
     TitleLimit NUMBER,
-    CurrentChampion VARCHAR2(255),
+    CurrentChampion VARCHAR2(255) NULL, -- Explicitly allowing NULLs
     FOREIGN KEY (CurrentChampion) REFERENCES Fighter(Name)
 );
+
 
 CREATE TABLE FighterRecord (
     FighterName VARCHAR2(255) PRIMARY KEY,
