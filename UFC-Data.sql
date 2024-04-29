@@ -1,13 +1,5 @@
-INSERT ALL
-    INTO WeightClass (Name, NonTitleLimit, TitleLimit) VALUES ('Flyweight', 126, 125)
-    INTO WeightClass (Name, NonTitleLimit, TitleLimit) VALUES ('Bantamweight', 136, 135)
-    INTO WeightClass (Name, NonTitleLimit, TitleLimit) VALUES ('Featherweight', 146, 145)
-    INTO WeightClass (Name, NonTitleLimit, TitleLimit) VALUES ('Lightweight', 156, 155)
-    INTO WeightClass (Name, NonTitleLimit, TitleLimit) VALUES ('Welterweight', 171, 170)
-    INTO WeightClass (Name, NonTitleLimit, TitleLimit) VALUES ('Middleweight', 186, 185)
-    INTO WeightClass (Name, NonTitleLimit, TitleLimit) VALUES ('Light Heavyweight', 206, 205)
-    INTO WeightClass (Name, NonTitleLimit, TitleLimit) VALUES ('Heavyweight', 266, 265)
-SELECT * FROM dual;
+
+
 
 -- Insert data into Fighter table
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Height, Reach)
@@ -179,3 +171,4 @@ VALUES ('Alexa Grasso', 'Women Flyweight', 'Champion');
 INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
 VALUES ('Julianna Peña', 'Women Bantamweight', 'Champion');
 
+select * from FIGHTERRECORD;
