@@ -36,11 +36,11 @@ CREATE TABLE FighterRecord (
 
 
 
-CREATE TABLE Title (
+CREATE TABLE Championship (
     FighterName VARCHAR2(100),
     WeightClassName VARCHAR2(100),
-    TitleStatus VARCHAR2(7),
-    PRIMARY KEY (FighterName, WeightClassName,TitleStatus),
+    champStatus VARCHAR2(7),
+    PRIMARY KEY (FighterName, WeightClassName,ChampStatus),
     FOREIGN KEY (FighterName) REFERENCES Fighter(Name),
     FOREIGN KEY (WeightClassName) REFERENCES WeightClass(Name)
 );
@@ -63,4 +63,4 @@ SELECT
     NoContests
 FROM 
     FighterRecord;
-
+delete from FIGHTERRECORD;

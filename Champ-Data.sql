@@ -103,52 +103,48 @@ VALUES ('Alexa Grasso', 4, 2, 10, 0, 0, 1, 2, 1, 1, 0);
 
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
 VALUES ('Raquel Pennington', 1, 4, 11, 0, 1, 1, 6, 0, 0, 0);
---this should be raquel pennington
 
 
 -- Insert data into Title table for current champions
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Jon Jones', 'Heavyweight', 'Current');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Jon Jones', 'Light Heavyweight', 'Former');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Alex Pereira', 'Light Heavyweight', 'Current');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Alex Pereira', 'Middleweight', 'Former');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Dricus du Plessis', 'Middleweight', 'Current');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Leon Edwards', 'Welterweight', 'Current');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Islam Makhachev', 'Lightweight', 'Current');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Ilia Topuria', 'Featherweight', 'Current');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Sean OMalley', 'Bantamweight', 'Current');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Alexandre Pantoja', 'Flyweight', 'Current');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Zhang Weili', 'WStrawweight', 'Current');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Zhang Weili', 'WStrawweight', 'Former');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Alexa Grasso', 'WFlyweight', 'Current');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Raquel Pennington', 'WBantamweight', 'Current');
-
-
-
 

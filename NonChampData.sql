@@ -422,7 +422,7 @@ VALUES ('Ketlen Vieira', 2, 4, 8, 0, 1, 0, 2, 0, 0, 0);
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
 VALUES ('Julianna Peña', 3, 5, 3, 0, 1, 2, 2, 0, 0, 0);
 -- Insert for Holly Holm
-INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)--fmr champ
 VALUES ('Holly Holm', 8, 0, 7, 0, 1, 2, 2, 4, 0, 1);
 
 -- Insert for Kayla Harrison
@@ -433,5 +433,77 @@ VALUES ('Kayla Harrison', 6, 7, 4, 0, 0, 0, 1, 0, 0, 0);
 
 
 
+--Insert titles for former champs
+-- Insert title record for Stipe Miocic
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Stipe Miocic', 'Heavyweight', 'Former');
 
+-- Insert title record for Jiří Procházka
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Jiří Procházka', 'Light Heavyweight', 'Former');
+
+-- Insert title record for Jamahal Hill
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Jamahal Hill', 'Light Heavyweight', 'Former');
+
+-- Insert title record for Jan Błachowicz
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Jan Błachowicz', 'Light Heavyweight', 'Former');
+
+-- Insert title record for Sean Strickland
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Sean Strickland', 'Middleweight', 'Former');
+
+-- Insert title record for Israel Adesanya
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Israel Adesanya', 'Middleweight', 'Former');
+
+-- Insert title record for Robert Whittaker
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Robert Whittaker', 'Middleweight', 'Former');
+
+-- Insert title record for Kamaru Usman
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Kamaru Usman', 'Welterweight', 'Former');
+
+-- Insert title record for Charles Oliveira
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Charles Oliveira', 'Lightweight', 'Former');
+
+-- Insert title record for Alexander Volkanovski
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Alexander Volkanovski', 'Featherweight', 'Former');
+
+-- Insert title record for Max Holloway
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Max Holloway', 'Featherweight', 'Former');
+
+-- Insert title record for Holly Holm
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Holly Holm', 'WBantamweight', 'Former');
+
+-- Insert title record for Petr Yan
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Petr Yan', 'Bantamweight', 'Former');
+
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES('Brandon Moreno', 'Flyweight','Former');
+
+-- Insert title record for Henry Cejudo
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Henry Cejudo', 'Bantamweight', 'Former');
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Henry Cejudo', 'Flyweight', 'Former');
+
+-- Insert title record for Jéssica Andrade
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Jéssica Andrade', 'WStrawweight', 'Former');
+
+-- Insert title record for Julianna Peña
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Julianna Peña', 'WBantamweight', 'Former');
+
+-- Insert title record for Valentina Shevchenko
+INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
+VALUES ('Valentina Shevchenko', 'WFlyweight', 'Former');
 
