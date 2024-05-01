@@ -111,6 +111,9 @@ VALUES ('Merab Dvalishvili', 33, 'Georgia', 'Striking', 'Serra-Longo Fight Team'
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Ricky Simon', 31, 'USA', 'Striking', 'Gracie Barra Portland', 'Bantamweight', 68, 68);
 
+INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach) --fmr double champ
+VALUES ('Henry Cejudo', 37, 'USA', 'Wrestling','Fight Ready','Bantamweight',66,64);
+
 -- Flyweight
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
@@ -153,3 +156,46 @@ VALUES ('Taila Santos', 30, 'Brazil', 'Striking', 'Paraná Vale Tudo', 'WFlyweig
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Casey ONeill', 25, 'Australia', 'Striking', 'Tiger Muay Thai', 'WFlyweight', 65, 67);
+
+
+-- Women's Bantamweight
+INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
+VALUES ('Irene Aldana', 34, 'Mexico', 'Striking', 'Lobo Gym MMA', 'WBantamweight', 69, 68);
+
+INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
+VALUES ('Ketlen Vieira', 31, 'Brazil', 'Brazilian Jiu-Jitsu', 'Nova União', 'WBantamweight', 68, 68);
+
+INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
+VALUES ('Raquel Pennington', 34, 'USA', 'Wrestling/Striking', 'Altitude MMA', 'WBantamweight', 67, 67);
+
+INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach) -- former champ
+VALUES ('Holly Holm', 41, 'USA', 'Boxing/Kickboxing', 'Jackson Wink MMA Academy', 'WBantamweight', 68, 69);
+
+INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
+VALUES ('Kayla Harrison',33,'USA','Judo','American Top Team','WBantamweight',68,66);
+
+
+
+
+--Insert into fighter record
+--Heavyweight
+-- Insert for Tom Aspinall
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Tom Aspinall', 11, 3, 0, 0, 1, 1, 0, 1, 0, 0);
+
+-- Insert for Ciryl Gane
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Ciryl Gane', 6, 3, 3, 0, 1, 0, 1, 0, 0, 0);
+
+-- Insert for Sergei Pavlovich
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Sergei Pavlovich', 15, 0, 3, 0, 2, 0, 0, 0, 0, 0);
+
+-- Insert for Stipe Miocic
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Stipe Miocic', 15, 0, 5, 0, 2, 0, 2, 0, 0, 0);
+
+-- Insert for Curtis Blaydes
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Curtis Blaydes', 13, 0, 5, 0, 4, 0, 0, 0, 0, 1);
+
