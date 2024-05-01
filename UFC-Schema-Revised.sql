@@ -39,7 +39,7 @@ CREATE TABLE FighterRecord (
 CREATE TABLE Championship (
     FighterName VARCHAR2(100),
     WeightClassName VARCHAR2(100),
-    champStatus VARCHAR2(7),
+    ChampStatus VARCHAR2(7),
     PRIMARY KEY (FighterName, WeightClassName,ChampStatus),
     FOREIGN KEY (FighterName) REFERENCES Fighter(Name),
     FOREIGN KEY (WeightClassName) REFERENCES WeightClass(Name)
