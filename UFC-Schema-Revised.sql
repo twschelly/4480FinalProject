@@ -63,4 +63,5 @@ SELECT
     NoContests
 FROM 
     FighterRecord;
-delete from FIGHTERRECORD;
+
+
