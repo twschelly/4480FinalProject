@@ -33,24 +33,25 @@ INSERT INTO WeightClass (Name, NonTitleLimit, TitleLimit)
 VALUES ('WBantamweight', 136, 135);
 
 
-
 -- Insert champion data into Fighter table
  
+INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
+VALUES ('Jon Jones', 36, 'USA', 'MMA', 'Jackson Wink MMA', 'Heavyweight', 76, 84);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Alex Pereira', 36, 'Brazil', 'Kickboxing', 'Texiera MMA and Fitness', 'Light Heavyweight', 76, 80);
+VALUES ('Alex Pereira', 36, 'Brazil', 'Kickboxing', 'Texiera MMA and Fitness', 'Light Heavyweight', 76, 79);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Dricus du Plessis', 30, 'South Africa', 'Striking', 'Team CIT','Middleweight', 73, 75);
+VALUES ('Dricus du Plessis', 30, 'South Africa', 'Striking', 'Team CIT','Middleweight', 72, 74);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Leon Edwards', 32, 'UK', 'Striking', 'Team Renegade','Welterweight', 74, 74);
+VALUES ('Leon Edwards', 32, 'England', 'Striking', 'Team Renegade','Welterweight', 74, 74);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Islam Makhachev', 32, 'Russia', 'Sambo', 'American Kickboxing Academy','Lightweight', 70, 70);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Ilia Topuria', 27, 'Spain', 'Striking', 'Climent Club','Featherweight', 67, 69);
+VALUES ('Ilia Topuria', 27, 'Spain', 'Striking', 'Climent Club','Featherweight', 68, 69);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Sean OMalley', 29, 'USA', 'Striking', 'Glendale Fighting Club','Bantamweight', 71, 72);
@@ -64,9 +65,10 @@ VALUES ('Zhang Weili', 34, 'China', 'Striking', 'Black Tiger Fight Club','WStraw
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Alexa Grasso', 31, 'Mexico', 'Striking', 'Lobo Gym', 'WFlyweight', 65, 66);
 
---this should be raquel pennington
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Julianna Peña', 34, 'USA', 'Striking', 'Sik-Jitsu Fighting Systems','WBantamweight', 67, 69);
+VALUES ('Raquel Pennington', 34, 'USA', 'Wrestling/Striking', 'Altitude MMA', 'WBantamweight', 67, 67);
+
+
 
 -- Insert data for current champions into FighterRecord table
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
@@ -100,7 +102,7 @@ INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLoss
 VALUES ('Alexa Grasso', 4, 2, 10, 0, 0, 1, 2, 1, 1, 0);
 
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
-VALUES ('Julianna Peña', 3, 5, 3, 0, 1, 2, 2, 0, 0, 0);
+VALUES ('Raquel Pennington', 1, 4, 11, 0, 1, 1, 6, 0, 0, 0);
 --this should be raquel pennington
 
 
@@ -113,6 +115,9 @@ VALUES ('Jon Jones', 'Light Heavyweight', 'Former');
 
 INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
 VALUES ('Alex Pereira', 'Light Heavyweight', 'Current');
+
+INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
+VALUES ('Alex Pereira', 'Middleweight', 'Former');
 
 INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
 VALUES ('Dricus du Plessis', 'Middleweight', 'Current');
@@ -135,7 +140,6 @@ VALUES ('Alexandre Pantoja', 'Flyweight', 'Current');
 INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
 VALUES ('Zhang Weili', 'WStrawweight', 'Current');
 
-
 INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
 VALUES ('Zhang Weili', 'WStrawweight', 'Former');
 
@@ -143,10 +147,8 @@ INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
 VALUES ('Alexa Grasso', 'WFlyweight', 'Current');
 
 INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
-VALUES ('Julianna Peña', 'WBantamweight', 'Current');
+VALUES ('Raquel Pennington', 'WBantamweight', 'Current');
 
-INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
-VALUES ('Julianna Peña', 'WBantamweight', 'Former');
 
 
 

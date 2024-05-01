@@ -43,7 +43,7 @@ VALUES ('Curtis Blaydes', 13, 0, 5, 0, 4, 0, 0, 0, 0, 1);
 
 -- Light Heavyweight Fighter Inserts
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach) --fmr champ
-VALUES ('Jiří Procházka', 31, 'Czech Republic', 'Striking', 'Jetsaam Gym','Light Heavyweight', 75, 80);
+VALUES ('Jiří Procházka', 31, 'Czech Republic', 'Striking', 'Jetsaam Gym','Light Heavyweight', 76, 80);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Magomed Ankalaev', 31, 'Russia', 'Striking', 'Gor MMA Team','Light Heavyweight', 75, 75);
@@ -91,10 +91,10 @@ INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_cla
 VALUES ('Israel Adesanya', 34, 'New Zealand', 'Striking', 'City Kickboxing', 'Middleweight', 76, 80);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Robert Whittaker', 33, 'New Zealand', 'Striking', 'Gracie Jiu-Jitsu Smeaton Grange', 'Middleweight', 73, 73); --fmr champ
+VALUES ('Robert Whittaker', 33, 'New Zealand', 'Striking', 'Gracie Jiu-Jitsu Smeaton Grange', 'Middleweight', 72, 73); --fmr champ
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Jared Cannonier', 39, 'USA', 'Striking', 'MMA Lab', 'Middleweight', 73, 77);
+VALUES ('Jared Cannonier', 39, 'USA', 'Striking', 'MMA Lab', 'Middleweight', 72, 77);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Marvin Vettori', 30, 'Italy', 'Striking', 'Kings MMA', 'Middleweight', 72, 74);
@@ -126,10 +126,10 @@ VALUES ('Marvin Vettori', 2, 9, 8, 0, 0, 0, 7, 0, 1, 0);
 
 -- Welterweight Fighter Inserts
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach) --fmr champ
-VALUES ('Kamaru Usman', 36, 'Nigeria', 'Striking', 'Sanford MMA', 'Welterweight', 72, 76);
+VALUES ('Kamaru Usman', 36, 'Nigeria', 'Striking', 'Sanford MMA', 'Welterweight', 70, 76);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Belal Muhammad', 35, 'USA', 'Striking', 'Roufusport MMA', 'Welterweight', 71, 72);
+VALUES ('Belal Muhammad', 35, 'USA', 'Striking', 'Roufusport MMA', 'Welterweight', 70, 72);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Shavkat Rakhmonov', 29, 'Kazakhstan', 'Striking', 'Sanford MMA', 'Welterweight', 73, 77);
@@ -166,19 +166,19 @@ VALUES ('Jack Della Maddalena', 12, 2, 3, 0, 1, 1, 0, 0, 0, 0);
 
 -- Lightweight Fighter Inserts
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Arman Tsarukyan', 27, 'Armenia', 'Striking', 'American Top Team', 'Lightweight', 71, 72);
+VALUES ('Arman Tsarukyan', 27, 'Armenia', 'Striking', 'American Top Team', 'Lightweight', 67, 72);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach) --fmr champ
-VALUES ('Charles Oliveira', 34, 'Brazil', 'Striking', 'Chute Boxe', 'Lightweight', 71, 74);
+VALUES ('Charles Oliveira', 34, 'Brazil', 'Striking', 'Chute Boxe', 'Lightweight', 70, 74);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Justin Gaethje', 35, 'USA', 'Striking', 'Elevation Fight Team', 'Lightweight', 71, 71);
+VALUES ('Justin Gaethje', 35, 'USA', 'Striking', 'Elevation Fight Team', 'Lightweight', 71, 70);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Dustin Poirier', 35, 'USA', 'Striking', 'American Top Team', 'Lightweight', 69, 72);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Mateusz Gamrot', 33, 'Poland', 'Striking', 'American Top Team', 'Lightweight', 70, 70);
+VALUES ('Mateusz Gamrot', 33, 'Poland', 'Striking', 'American Top Team', 'Lightweight', 70, 71);
 --Lightweight figherRecord inserts
 -- Insert for Arman Tsarukyan
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
@@ -218,7 +218,7 @@ INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_cla
 VALUES ('Yair Rodriguez', 31, 'Mexico', 'Striking', 'Jackson Wink MMA Academy', 'Featherweight', 71, 73);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Movsar Evloev', 29, 'Russia', 'Striking', 'Tiger Muay Thai', 'Featherweight', 69, 72);
+VALUES ('Movsar Evloev', 29, 'Russia', 'Striking', 'Tiger Muay Thai', 'Featherweight', 67, 72);
 --featherweigth fighter record inserts
 -- Insert for Alexander Volkanovski
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
@@ -249,16 +249,16 @@ INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_cla
 VALUES ('Petr Yan', 30, 'Russia', 'Striking', 'Tiger Muay Thai', 'Bantamweight', 68, 70);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Cory Sandhagen', 31, 'USA', 'Striking', 'Elevation Fight Team', 'Bantamweight', 70, 70);
+VALUES ('Cory Sandhagen', 31, 'USA', 'Striking', 'Elevation Fight Team', 'Bantamweight', 71, 70);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Merab Dvalishvili', 33, 'Georgia', 'Striking', 'Serra-Longo Fight Team', 'Bantamweight', 68, 68);
+VALUES ('Merab Dvalishvili', 33, 'Georgia/USA', 'Striking', 'Serra-Longo Fight Team', 'Bantamweight', 66, 68);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Ricky Simón', 31, 'USA', 'Striking', 'Gracie Barra Portland', 'Bantamweight', 68, 68);
+VALUES ('Ricky Simón', 31, 'USA', 'Striking', 'Gracie Barra Portland', 'Bantamweight', 66, 69);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach) --fmr double champ
-VALUES ('Henry Cejudo', 37, 'USA', 'Wrestling','Fight Ready','Bantamweight',66,64);
+VALUES ('Henry Cejudo', 37, 'USA', 'Wrestling','Fight Ready','Bantamweight',64,64);
 --Bandtamweight fighterRecord inserts
 -- Insert for Marlon Vera
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
@@ -293,13 +293,13 @@ INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_cla
 VALUES ('Brandon Moreno', 30, 'Mexico', 'Brazilian Jiu-Jitsu', 'Entram Gym', 'Flyweight', 67, 70);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Kai Kara-France', 31, 'New Zealand', 'Striking', 'City Kickboxing', 'Flyweight', 64, 68);
+VALUES ('Kai Kara-France', 31, 'New Zealand', 'Striking', 'City Kickboxing', 'Flyweight', 64, 69);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Manel Kape', 30, 'Portugal', 'Striking', 'AKA Thailand', 'Flyweight', 65, 68);
+VALUES ('Manel Kape', 30, 'Portugal', 'Striking', 'AKA Thailand', 'Flyweight', 66, 68);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Brandon Royval', 31, 'USA', 'Brazilian Jiu-Jitsu', 'Factory X', 'Flyweight', 70, 70);
+VALUES ('Brandon Royval', 31, 'USA', 'Brazilian Jiu-Jitsu', 'Factory X', 'Flyweight', 69, 68);
 --Flyyweight FIghterRecord inserts
 -- Insert for Brandon Moreno
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
@@ -402,7 +402,7 @@ INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_cla
 VALUES ('Ketlen Vieira', 31, 'Brazil', 'Brazilian Jiu-Jitsu', 'Nova União', 'WBantamweight', 68, 68);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Raquel Pennington', 34, 'USA', 'Wrestling/Striking', 'Altitude MMA', 'WBantamweight', 67, 67);
+VALUES ('Julianna Peña', 34, 'USA', 'Striking', 'Sik-Jitsu Fighting Systems','WBantamweight', 67, 69);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach) -- former champ
 VALUES ('Holly Holm', 41, 'USA', 'Boxing/Kickboxing', 'Jackson Wink MMA Academy', 'WBantamweight', 68, 70);
@@ -418,10 +418,9 @@ VALUES ('Irene Aldana', 8, 3, 4, 0, 2, 0, 5, 0, 0, 0);
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
 VALUES ('Ketlen Vieira', 2, 4, 8, 0, 1, 0, 2, 0, 0, 0);
 
--- Insert for Raquel Pennington
+-- Insert for Julianna Pena
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
-VALUES ('Raquel Pennington', 1, 4, 11, 0, 1, 1, 6, 0, 0, 0);
-
+VALUES ('Julianna Peña', 3, 5, 3, 0, 1, 2, 2, 0, 0, 0);
 -- Insert for Holly Holm
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
 VALUES ('Holly Holm', 8, 0, 7, 0, 1, 2, 2, 4, 0, 1);

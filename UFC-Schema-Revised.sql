@@ -63,3 +63,4 @@ SELECT
     NoContests
 FROM 
     FighterRecord;
+
