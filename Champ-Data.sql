@@ -148,3 +148,57 @@ VALUES ('Alexa Grasso', 'WFlyweight', 'Current');
 INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Raquel Pennington', 'WBantamweight', 'Current');
 
+-- Update current champion for Heavyweight
+UPDATE WeightClass
+SET CurrentChampion = 'Jon Jones'
+WHERE Name = 'Heavyweight';
+
+-- Update current champion for Light Heavyweight
+UPDATE WeightClass
+SET CurrentChampion = 'Alex Pereira'
+WHERE Name = 'Light Heavyweight';
+
+-- Update current champion for Middleweight
+UPDATE WeightClass
+SET CurrentChampion = 'Dricus du Plessis'
+WHERE Name = 'Middleweight';
+
+-- Update current champion for Welterweight
+UPDATE WeightClass
+SET CurrentChampion = 'Leon Edwards'
+WHERE Name = 'Welterweight';
+
+-- Update current champion for Lightweight
+UPDATE WeightClass
+SET CurrentChampion = 'Islam Makhachev'
+WHERE Name = 'Lightweight';
+
+-- Update current champion for Featherweight
+UPDATE WeightClass
+SET CurrentChampion = 'Ilia Topuria'
+WHERE Name = 'Featherweight';
+
+-- Update current champion for Bantamweight
+UPDATE WeightClass
+SET CurrentChampion = 'Sean OMalley'
+WHERE Name = 'Bantamweight';
+
+-- Update current champion for Flyweight
+UPDATE WeightClass
+SET CurrentChampion = 'Alexandre Pantoja'
+WHERE Name = 'Flyweight';
+
+-- Update current champion for Women's Strawweight
+UPDATE WeightClass
+SET CurrentChampion = 'Zhang Weili'
+WHERE Name = 'WStrawweight';
+
+-- Update current champion for Women's Flyweight
+UPDATE WeightClass
+SET CurrentChampion = 'Alexa Grasso'
+WHERE Name = 'WFlyweight';
+
+-- Update current champion for Women's Bantamweight
+UPDATE WeightClass
+SET CurrentChampion = 'Raquel Pennington'
+WHERE Name = 'WBantamweight';
