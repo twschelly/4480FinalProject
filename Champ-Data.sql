@@ -35,8 +35,7 @@ VALUES ('WBantamweight', 136, 135);
 
 
 -- Insert champion data into Fighter table
-INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Jon Jones', 36, 'USA', 'Striking', 'Jackson Wink MMA Academy', 'Heavyweight', 76, 84);
+ 
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Alex Pereira', 36, 'Brazil', 'Kickboxing', 'Texiera MMA and Fitness', 'Light Heavyweight', 76, 80);
