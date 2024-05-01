@@ -321,39 +321,82 @@ VALUES ('Brandon Royval', 4, 9, 3, 0, 1, 1, 5, 0, 0, 0);
 
 
 
--- Women's Strawweight
+-- Women's Strawweight Fighter inserts
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Tatiana Suarez', 33, 'USA', 'Striking', 'Millennia MMA', 'WStrawweight', 66, 67);
+VALUES ('Tatiana Suarez', 33, 'USA', 'Striking', 'Millennia MMA', 'WStrawweight', 65, 66);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Yan Xiaonan', 34, 'China', 'Striking', 'Jackson Wink MMA Academy', 'WStrawweight', 65, 65);
+VALUES ('Yan Xiaonan', 34, 'China', 'Striking', 'Jackson Wink MMA Academy', 'WStrawweight', 65, 63);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Amanda Lemos', 36, 'Brazil', 'Striking', 'Marajó Brothers Team', 'WStrawweight', 63, 64);
+VALUES ('Amanda Lemos', 36, 'Brazil', 'Striking', 'Marajó Brothers Team', 'WStrawweight', 64, 65);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Jéssica Andrade', 32, 'Brazil', 'Striking', 'Paraná Vale Tudo', 'WStrawweight', 61, 62);
+VALUES ('Jéssica Andrade', 32, 'Brazil', 'Striking', 'Paraná Vale Tudo', 'WStrawweight', 62, 62);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Virna Jandiroba', 35, 'Brazil', 'Brazilian Jiu-Jitsu', 'American Top Team', 'WStrawweight', 64, 64);
+VALUES ('Virna Jandiroba', 35, 'Brazil', 'Brazilian Jiu-Jitsu', 'American Top Team', 'WStrawweight', 63, 64);
+--WStrawweight fighterRecord inserts
+-- Insert for Tatiana Suarez
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Tatiana Suarez', 2, 5, 3, 0, 0, 0, 0, 0, 0, 0);
 
--- Women's Flyweight
+-- Insert for Yan Xiaonan
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Yan Xiaonan', 8, 0, 9, 0, 1, 1, 2, 0, 0, 1);
+
+-- Insert for Amanda Lemos
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Amanda Lemos', 8, 3, 3, 0, 1, 1, 1, 0, 1, 0);
+
+-- Insert for Jéssica Andrade
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Jéssica Andrade', 10, 8, 8, 0, 5, 4, 3, 0, 0, 0);
+
+-- Insert for Virna Jandiroba
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Virna Jandiroba', 1, 13, 6, 0, 0, 0, 3, 0, 0, 0);
+
+
+
+
+
+
+-- Women's Flyweight Fighter Inserts
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Manon Fiorot', 33, 'France', 'Striking', 'GFA Team', 'WFlyweight', 65, 67);
+VALUES ('Manon Fiorot', 33, 'France', 'Striking', 'GFA Team', 'WFlyweight', 67, 65);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Erin Blanchfield', 24, 'USA', 'Brazilian Jiu-Jitsu', 'Renzo Gracie', 'WFlyweight', 65, 67);
+VALUES ('Erin Blanchfield', 24, 'USA', 'Brazilian Jiu-Jitsu', 'Renzo Gracie', 'WFlyweight', 64, 68);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Taila Santos', 30, 'Brazil', 'Striking', 'Paraná Vale Tudo', 'WFlyweight', 65, 66);
+VALUES ('Taila Santos', 30, 'Brazil', 'Striking', 'Paraná Vale Tudo', 'WFlyweight', 66, 68);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Casey ONeill', 25, 'Australia', 'Striking', 'Tiger Muay Thai', 'WFlyweight', 65, 67);
+VALUES ('Casey ONeill', 25, 'Australia', 'Striking', 'Tiger Muay Thai', 'WFlyweight', 66, 69);
+-- Insert for Manon Fiorot
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Manon Fiorot', 6, 0, 6, 0, 0, 0, 1, 0, 0, 0);
+
+-- Insert for Erin Blanchfield
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Erin Blanchfield', 2, 4, 6, 0, 0, 0, 2, 0, 0, 0);
+
+-- Insert for Taila Santos
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Taila Santos', 10, 4, 6, 0, 0, 0, 3, 0, 0, 0);
+
+-- Insert for Casey O'Neill
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Casey ONeill', 3, 2, 4, 0, 0, 1, 1, 0, 0, 0);
 
 
--- Women's Bantamweight
+
+
+
+-- Women's Bantamweight Fighter Inserts
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
-VALUES ('Irene Aldana', 34, 'Mexico', 'Striking', 'Lobo Gym MMA', 'WBantamweight', 69, 68);
+VALUES ('Irene Aldana', 34, 'Mexico', 'Striking', 'Lobo Gym MMA', 'WBantamweight', 69, 69);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Ketlen Vieira', 31, 'Brazil', 'Brazilian Jiu-Jitsu', 'Nova União', 'WBantamweight', 68, 68);
@@ -362,10 +405,30 @@ INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_cla
 VALUES ('Raquel Pennington', 34, 'USA', 'Wrestling/Striking', 'Altitude MMA', 'WBantamweight', 67, 67);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach) -- former champ
-VALUES ('Holly Holm', 41, 'USA', 'Boxing/Kickboxing', 'Jackson Wink MMA Academy', 'WBantamweight', 68, 69);
+VALUES ('Holly Holm', 41, 'USA', 'Boxing/Kickboxing', 'Jackson Wink MMA Academy', 'WBantamweight', 68, 70);
 
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Kayla Harrison',33,'USA','Judo','American Top Team','WBantamweight',68,66);
+-- Women's Bantamweight FighterRecord Inserts
+-- Insert for Irene Aldana
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Irene Aldana', 8, 3, 4, 0, 2, 0, 5, 0, 0, 0);
+
+-- Insert for Ketlen Vieira
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Ketlen Vieira', 2, 4, 8, 0, 1, 0, 2, 0, 0, 0);
+
+-- Insert for Raquel Pennington
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Raquel Pennington', 1, 4, 11, 0, 1, 1, 6, 0, 0, 0);
+
+-- Insert for Holly Holm
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Holly Holm', 8, 0, 7, 0, 1, 2, 2, 4, 0, 1);
+
+-- Insert for Kayla Harrison
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Kayla Harrison', 6, 7, 4, 0, 0, 0, 1, 0, 0, 0);
 
 
 

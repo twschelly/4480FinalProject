@@ -64,6 +64,7 @@ VALUES ('Zhang Weili', 34, 'China', 'Striking', 'Black Tiger Fight Club','WStraw
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Alexa Grasso', 31, 'Mexico', 'Striking', 'Lobo Gym', 'WFlyweight', 65, 66);
 
+--this should be raquel pennington
 INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
 VALUES ('Julianna Peña', 34, 'USA', 'Striking', 'Sik-Jitsu Fighting Systems','WBantamweight', 67, 69);
 
@@ -100,6 +101,7 @@ VALUES ('Alexa Grasso', 4, 2, 10, 0, 0, 1, 2, 1, 1, 0);
 
 INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
 VALUES ('Julianna Peña', 3, 5, 3, 0, 1, 2, 2, 0, 0, 0);
+--this should be raquel pennington
 
 
 -- Insert data into Title table for current champions
@@ -145,5 +147,6 @@ VALUES ('Julianna Peña', 'WBantamweight', 'Current');
 
 INSERT INTO Title (FighterName, WeightClassName, TitleStatus)
 VALUES ('Julianna Peña', 'WBantamweight', 'Former');
+
 
 
