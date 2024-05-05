@@ -202,3 +202,5 @@ WHERE Name = 'WFlyweight';
 UPDATE WeightClass
 SET CurrentChampion = 'Raquel Pennington'
 WHERE Name = 'WBantamweight';
+
+

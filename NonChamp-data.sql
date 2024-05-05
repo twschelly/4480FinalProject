@@ -504,4 +504,15 @@ INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Julianna Peña', 'WBantamweight', 'Former');
 
 
+--add McGregor
+INSERT INTO Fighter (Name, Age, Nationality, Style, Gym_Name, Current_weight_class, Height, Reach)
+VALUES ('Conor McGregor', 34, 'Ireland', 'Striking', 'SBG Ireland', 'Lightweight', 69, 74);
 
+INSERT INTO FighterRecord (FighterName, KOWins, SubWins, DecWins, DQWins, KOLosses, SubLosses, DecLosses, DQLosses, Draws, NoContests)
+VALUES ('Conor McGregor', 19, 1, 2, 0, 2, 4, 0, 0, 0, 0);
+
+INSERT INTO Championship(FighterName, WeightClassName, ChampStatus)
+VALUES ('Conor McGregor', 'Lightweight', 'Former');
+
+INSERT INTO Championship(FighterName, WeightClassName, ChampStatus)
+VALUES ('Conor McGregor', 'Featherweight', 'Former');
