@@ -503,7 +503,5 @@ VALUES ('Jéssica Andrade', 'WStrawweight', 'Former');
 INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
 VALUES ('Julianna Peña', 'WBantamweight', 'Former');
 
--- Insert title record for Valentina Shevchenko
-INSERT INTO Championship (FighterName, WeightClassName, ChampStatus)
-VALUES ('Valentina Shevchenko', 'WFlyweight', 'Former');
+
 

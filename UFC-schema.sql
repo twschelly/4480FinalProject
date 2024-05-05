@@ -1,63 +1,67 @@
-CREATE TABLE Fighters (
-    fighter_id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL,
-    wins INT,
-    ko_wins INT,
-    sub_wins INT,
-    dec_wins INT,
-    losses INT,
-    ko_losses INT,
-    sub_losses INT,
-    dec_losses INT,
-    age INT,
-    nationality VARCHAR(255),
-    style VARCHAR(255),
+CREATE TABLE WeightClass (
+    Name VARCHAR2(30) PRIMARY KEY,
+    NonTitleLimit NUMBER,
+    TitleLimit NUMBER
 );
 
-CREATE TABLE Gyms (
-    gym_id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL,
-    location VARCHAR(255),
-    focus VARCHAR(255)
+CREATE TABLE Fighter (
+    Name VARCHAR2(100) PRIMARY KEY,
+    Age NUMBER,
+    Nationality VARCHAR2(100),
+    Style VARCHAR2(100),
+    Gym_Name VARCHAR2(100),
+    Current_weight_class VARCHAR(30),
+    Height NUMBER,  -- Height of the fighter in inches
+    Reach NUMBER,    -- Reach of the fighter in inches
+    FOREIGN KEY (Current_weight_class) REFERENCES WeightClass(Name)
 );
 
-CREATE TABLE Coaches (
-    coach_id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL,
-    subject VARCHAR(255)
+
+
+
+CREATE TABLE FighterRecord (
+    FighterName VARCHAR2(100) PRIMARY KEY,
+    KOWins NUMBER DEFAULT 0,
+    SubWins NUMBER DEFAULT 0,
+    DecWins NUMBER DEFAULT 0,
+    DQWins NUMBER DEFAULT 0,
+    KOLosses NUMBER DEFAULT 0,
+    SubLosses NUMBER DEFAULT 0,
+    DecLosses NUMBER DEFAULT 0,
+    DQLosses NUMBER DEFAULT 0,
+    Draws NUMBER DEFAULT 0,
+    NoContests NUMBER DEFAULT 0,
+    FOREIGN KEY (FighterName) REFERENCES Fighter(Name)
 );
 
-CREATE TABLE Weight_Classes (
-    weight_class_id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(255) NOT NULL,
-    non_title_limit FLOAT,
-    title_limit FLOAT
+
+
+CREATE TABLE Championship (
+    FighterName VARCHAR2(100),
+    WeightClassName VARCHAR2(100),
+    ChampStatus VARCHAR2(7),
+    PRIMARY KEY (FighterName, WeightClassName,ChampStatus),
+    FOREIGN KEY (FighterName) REFERENCES Fighter(Name),
+    FOREIGN KEY (WeightClassName) REFERENCES WeightClass(Name)
 );
 
-CREATE TABLE Fighter_Weight_Class (
-    fighter_id INT,
-    weight_class_id INT,
-    current BOOLEAN,
-    PRIMARY KEY (fighter_id, weight_class_id, current),
-    FOREIGN KEY (fighter_id) REFERENCES Fighters(fighter_id),
-    FOREIGN KEY (weight_class_id) REFERENCES Weight_Classes(weight_class_id)
-);
+--add chammp to weightClass
+ALTER TABLE WeightClass
+ADD CurrentChampion VARCHAR2(100) NULL;
+ALTER TABLE WeightClass
+ADD CONSTRAINT fk_current_champion
+FOREIGN KEY (CurrentChampion) REFERENCES Fighter(Name)
+ON DELETE SET NULL;
 
-CREATE TABLE Fighter_Titles (
-    fighter_id INT,
-    weight_class_id INT,
-    start_date DATE,
-    end_date DATE,
-    PRIMARY KEY (fighter_id, weight_class_id, start_date),
-    FOREIGN KEY (fighter_id) REFERENCES Fighters(fighter_id),
-    FOREIGN KEY (weight_class_id) REFERENCES Weight_Classes(weight_class_id)
-);
 
-CREATE TABLE Gym_Coaches (
-    gym_id INT,
-    coach_id INT,
-    head_coach BOOLEAN,
-    PRIMARY KEY (gym_id, coach_id),
-    FOREIGN KEY (gym_id) REFERENCES Gyms(gym_id),
-    FOREIGN KEY (coach_id) REFERENCES Coaches(coach_id)
-);
+CREATE VIEW View_FighterTotals AS
+SELECT 
+    FighterName,
+    KOWins + SubWins + DecWins + DQWins AS TotalWins,
+    KOLosses + SubLosses + DecLosses + DQLosses AS TotalLosses,
+    Draws,
+    NoContests
+FROM 
+    FighterRecord;
+
+
